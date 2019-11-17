@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">ConnekMa</string>
+
+    <string name="login_header_name">login</string>
+
+    <string name="login_button_text">login</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="username_or_email_hint">info@ominous.com</string>
+    <string name="user_password">Password</string>
+    <string name="forget_password">Forget Password ?</string>
+    <string name="password_hint">***********************</string>
+    <string name="login_button">Login</string>
+
+    <string name="register"><u>Register</u>.</string>
+
+
+    //-----register----------
+
+    <string name="register_header_name">Register</string>
+    <string name="username">Username</string>
+    <string name="username_hint">Omninos Solution</string>
+    <string name="user_phone">Phone Number</string>
+    <string name="user_phone_hint">***********</string>
+    <string name="email">Email</string>
+    <string name="email_hint">info@ominous.com</string>
+    <string name="password">Password</string>
+    <string name="conform_password">Conform Password</string>
+    <string name="register_button">Register</string>
+
+    <string name="signup_login_hint">You have an account? </string>
+    <string name="login"><u>Login</u>.</string>
+
+    //---------------verification------------------
+
+    <string name="verification_header_name">Verification</string>
+    <string name="submit_button">Submit</string>
+
+    //------------congo-----------
+    <string name="congratulations_veryfied_message">Your Profile is \n Successfully Verified.</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="done">Done</string>
+
+    //----------------key----------------
+
+    <string name="google_maps_api_key">AIzaSyDFO1yNBgrQViiFr2CQ24t_9IV9AHBZNcU</string>
+
+    //------------conform------------
+
+    <string name="conform">Conform Pickup</string>
+
+    //---------navigation---------
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv_no">CVV</string>
+    <string name="country">Country</string>
+    <string name="omninos">Omninos</string>
+    <string name="solution">Solution</string>
+    <string name="card_digite">1234 4321 1234 4321</string>
+    <string name="australia">Australia</string>
+    <string name="save_btn">Save</string>
+    <string name="add_payment">Add Payment Method</string>
+    <string name="credit_card">Credit or Debit card</string>
+    <string name="paytm">Paytm</string>
+    <string name="cash">Cash</string>
+    <string name="gift_card">Gift card</string>
+    <string name="minimum_length_8">Minimum 8 characters</string>
+    <string name="fire">Fare Issue</string>
+    <string name="route_feedback">Route Feedback</string>
+    <string name="lost_items">Lost Items</string>
+    <string name="promotions">Promotions</string>
+    <string name="vehicle_feedback">Vehicle Feedback</string>
+    <string name="involve">I was involved in an accident</string>
+    <string name="other_tell_us">Other(Please tell us)</string>
+    <string name="driver_name">Steve Smith</string>
+    <string name="car_name">Toyota Etios</string>
+    <string name="car_no">AUS 01 ML 7777</string>
+    <string name="address_1">Street No 07 Melbourne, Australia</string>
+    <string name="contact">Contact</string>
+    <string name="schedule_of_ride">Schedule A Ride</string>
+    <string name="start_pick_up_window">Start Pickup Window</string>
+    <string name="location_from">Street No.7 Melbourne</string>
+    <string name="location_to">Street No.27 Melbourne</string>
+    <string name="spicify_pickup">Specify Pick up location</string>
+    <string name="move_to_pin_adjust">Move pin to adjust pickup</string>
+
+
+</resources>

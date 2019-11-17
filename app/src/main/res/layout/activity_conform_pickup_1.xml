@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Activity.ConformPickup_1Activity">
+
+    <include
+        android:id="@+id/specify_location"
+        layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:layout_below="@id/specify_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/map_fragment"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_20">
+
+            <LinearLayout
+                android:layout_margin="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spicify_pickup"/>
+
+                <EditText
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightGray1"
+                    android:hint="Loading....."/>
+
+                <TextView
+                    android:padding="@dimen/dp_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/move_to_pin_adjust"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conform"
+            android:textAllCaps="false"
+            android:background="@drawable/button_background"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:layout_margin="40dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

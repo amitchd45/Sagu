@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.Activity.VerificationActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_arrow_back">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/header_logo" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/card_view_margin_left"
+                android:layout_marginRight="@dimen/card_view_margin_right"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/card_bg_color"
+                app:cardCornerRadius="@dimen/cardCornerRadius"
+                app:cardElevation="@dimen/cardElevation"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_inside_card_view">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            android:text="@string/verification_header_name"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:text="A verification code has been sent to the phone\n number +915465644320.Please\n enter the code below."
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center_horizontal"
+                                android:textColor="@color/lightDark"
+                                android:text="Enter Your Verification Code" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="30dp"
+                                android:gravity="center_horizontal">
+
+                                <EditText
+                                    android:id="@+id/otp1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/circle_shape"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:text="3"
+                                    android:textStyle="bold"
+                                    android:maxLength="1"
+                                    android:layout_margin="6dp"
+                                    android:textColor="@color/white" />
+
+                                <EditText
+                                    android:id="@+id/otp2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/circle_shape"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:text="8"
+                                    android:maxLength="1"
+                                    android:textStyle="bold"
+                                    android:layout_margin="6dp"
+                                    android:textColor="@color/white" />
+
+                                <EditText
+                                    android:id="@+id/otp3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/circle_shape"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:text="4"
+                                    android:layout_margin="6dp"
+                                    android:maxLength="1"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white" />
+
+                                <EditText
+                                    android:id="@+id/otp4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/circle_shape"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:text="3"
+                                    android:layout_margin="6dp"
+                                    android:maxLength="1"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="50dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Button
+                                android:id="@+id/varification_submit_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_background"
+                                android:text="@string/submit_button"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

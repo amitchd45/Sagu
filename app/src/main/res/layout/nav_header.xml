@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:padding="3dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/profile_image"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        app:civ_border_color="@color/white"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Omninos Solutions"
+        android:textSize="18sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_location_pin1"
+        android:paddingLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:text="Melbourne Australia"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_marginTop="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+
+</LinearLayout>

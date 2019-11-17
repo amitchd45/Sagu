@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/custom_Spinner_ItemLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+<!--        android:layout_toLeftOf="@+id/custom_Spinner_icon"-->
+
+        <ImageView
+            android:id="@+id/iv_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:src="@drawable/ic_android" />
+
+        <TextView
+            android:id="@+id/tv_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Credit Card"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/custom_Spinner_icon"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:padding="10dp"-->
+<!--        android:src="@drawable/ic_arrow_drop_down_circle" />-->
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_trips"
+            android:title="Your Trips" />
+
+        <item
+            android:id="@+id/nav_payment"
+            android:title="Payment" />
+        <item
+            android:id="@+id/nav_booking"
+            android:title="My Bookings" />
+        <item
+            android:id="@+id/nav_invite_friend"
+            android:title="Invite Friends" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_emergency"
+            android:title="Emergency Call" />
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:title=""></item>
+
+        </menu>
+    </item>
+
+
+
+</menu>

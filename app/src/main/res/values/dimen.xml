@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <dimen name="headerTextSize">22sp</dimen>
+        <dimen name="newsMoreTextSize">12sp</dimen>
+        <dimen name="cardCornerRadius">15dp</dimen>
+        <dimen name="cardCornerRadiusOfEditText">8dp</dimen>
+        <dimen name="cardElevation">10dp</dimen>
+
+        <dimen name="card_view_margin_left">20dp</dimen>
+        <dimen name="card_view_margin_right">20dp</dimen>
+        <dimen name="padding_inside_card_view">15dp</dimen>
+        <dimen name="padding_title_text">10dp</dimen>
+        <dimen name="layout_padding">8dp</dimen>
+        <dimen name="icon_padding_top">5dp</dimen>
+
+        //--------button-------
+
+        <dimen name="login_btn_top_margin">10dp</dimen>
+        <dimen name="top_margin_register_btn">30dp</dimen>
+
+
+        <dimen name="signup_text_margin_top">10dp</dimen>
+
+        <dimen name="activity_horizontal_margin">16dp</dimen>
+
+
+
+</resources>
