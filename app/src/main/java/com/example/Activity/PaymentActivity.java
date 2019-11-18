@@ -22,7 +22,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        mActivity_Title = (TextView) findViewById(R.id.header_text);
+        mActivity_Title = findViewById(R.id.header_text);
         mActivity_Title.setText("Payment Options");
         btn_back = findViewById(R.id.back_arrow);
         btn_back.setOnClickListener(this);
@@ -40,8 +40,7 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                 break;
             }
             case R.id.back_arrow: {
-                Intent intent = new Intent(PaymentActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
             }
         }

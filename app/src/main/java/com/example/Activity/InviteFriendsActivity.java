@@ -32,8 +32,7 @@ public class InviteFriendsActivity extends AppCompatActivity implements View.OnC
 
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(InviteFriendsActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
         }
     }

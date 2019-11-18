@@ -28,15 +28,15 @@ public class AddPasswordActivity extends AppCompatActivity implements View.OnCli
 
     public void nextClick(View view) {
 
-        Intent intent = new Intent(AddPasswordActivity.this,FindingRideActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(AddPasswordActivity.this,FindingRideActivity.class);
+//        startActivity(intent);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.back_arrow:{
-                Intent intent = new Intent(AddPasswordActivity.this,Payment_1Activity.class);
+                Intent intent = new Intent(AddPasswordActivity.this,AddPayment_1Activity.class);
                 startActivity(intent);
                 break;
             }

@@ -17,6 +17,12 @@
             android:background="@color/white"
             android:theme="@style/AppTheme.PopupOverlay">
 
+            <ImageView
+                android:id="@+id/iv_open_drawer"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/vector_smart_object_1"/>
+
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>

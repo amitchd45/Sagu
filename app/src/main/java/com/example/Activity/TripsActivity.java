@@ -46,11 +46,8 @@ public class TripsActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(TripsActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
-
-
         }
     }
 }

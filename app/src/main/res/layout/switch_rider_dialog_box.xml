@@ -18,7 +18,8 @@
         android:id="@+id/relativeLayout19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp_15">
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_15">
 
         <ImageView
             android:id="@+id/iv_me"
@@ -27,7 +28,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginTop="6dp"
-            android:src="@drawable/ic_add_circle_outline_black" />
+            android:src="@drawable/ic_user" />
 
         <TextView
             android:layout_width="match_parent"
@@ -78,6 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:visibility="invisible"
             android:src="@drawable/ic_check_black_24dp"
             android:textColor="@color/black" />
 

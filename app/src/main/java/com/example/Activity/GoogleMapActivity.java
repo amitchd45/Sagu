@@ -67,7 +67,7 @@ public class GoogleMapActivity extends AppCompatActivity implements OnMapReadyCa
     private FusedLocationProviderClient mLocationClient;
 
     private EditText mAddress;
-    ImageView mSchedule_set;
+    ImageView mSchedule_set,mOpenSideNavigation;
     private int mYear, mMonth, mDay, mHour, mMinute;
 
 
@@ -85,16 +85,22 @@ public class GoogleMapActivity extends AppCompatActivity implements OnMapReadyCa
         mSchedule_set = (ImageView) findViewById(R.id.schedule_btn);
         mSchedule_set.setOnClickListener(this);
         Toolbar toolbar = findViewById(R.id.toolbar1);
+        mOpenSideNavigation = findViewById(R.id.iv_open_drawer);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        mOpenSideNavigation.setOnClickListener(view -> {
+            drawerLayout.openDrawer(GravityCompat.START);
+        });
 
 
         drawerLayout = findViewById(R.id.drawer_layout1);
 
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
+
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+//        drawerLayout.addDrawerListener(toggle);
+//        toggle.syncState();
 
         //------------change navigation drawer icon button--------------
 
@@ -337,8 +343,9 @@ public class GoogleMapActivity extends AppCompatActivity implements OnMapReadyCa
             }
 
             case R.id.nav_logout: {
-                Intent logout_intent = new Intent(GoogleMapActivity.this, Payment_1Activity.class);
-                startActivity(logout_intent);
+                Toast.makeText(context, "Logout ...", Toast.LENGTH_SHORT).show();
+//                Intent logout_intent = new Intent(GoogleMapActivity.this, Payment_1Activity.class);
+//                startActivity(logout_intent);
                 break;
             }
         }

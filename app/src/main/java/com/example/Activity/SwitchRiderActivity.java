@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.ActionBar;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
@@ -24,13 +25,13 @@ import com.example.connekma.R;
 
 import java.lang.reflect.Field;
 
-public class SwitchRiderActivity extends AppCompatActivity {
+public class SwitchRiderActivity extends AppCompatActivity implements View.OnClickListener {
     private static final String TAG = "SwitchRiderActivity";
 
 
     Context context = this;
     Dialog dialog;
-    ImageView mSwitch_user;
+    ImageView mSwitch_user,btn_back;
     TextView mText;
 
     @Override
@@ -39,6 +40,8 @@ public class SwitchRiderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_switch_rider);
 
         mSwitch_user = (ImageView) findViewById(R.id.switch_rider);
+        btn_back = findViewById(R.id.back_arrow);
+        btn_back.setOnClickListener(this);
         mText = (TextView) findViewById(R.id.for_me);
 
         mText.setOnClickListener(view -> {
@@ -117,5 +120,15 @@ public class SwitchRiderActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.back_arrow:{
+                Intent intent = new Intent(SwitchRiderActivity.this,ConformPickupActivity.class);
+                startActivity(intent);
+                break;
+            }
+        }
 
+    }
 }

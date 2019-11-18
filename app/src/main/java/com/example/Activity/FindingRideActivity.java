@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -12,38 +13,57 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.connekma.R;
+import com.skyfishjy.library.RippleBackground;
 
 public class FindingRideActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button mRide_find_btn;
-    final Context context=this;
+    RelativeLayout mRide_find_layout;
+    final Context context = this;
     Dialog dialog;
+    ImageView btn_back;
+    RippleBackground rippleBackground;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_finding_ride);
 
-        mRide_find_btn = (Button) findViewById(R.id.ride_finding);
-        mRide_find_btn.setOnClickListener(this);
+        mRide_find_layout = findViewById(R.id.rl_finding_ride);
+        btn_back = findViewById(R.id.back_arrow);
+        btn_back.setOnClickListener(this);
+        mRide_find_layout.setOnClickListener(this);
+
+        rippleEffect();
+    }
+
+    private void rippleEffect() {
+       rippleBackground=(RippleBackground)findViewById(R.id.content);
+        ImageView imageView=(ImageView)findViewById(R.id.centerImage);
+        rippleBackground.startRippleAnimation();
     }
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.ride_finding:{
+        switch (view.getId()) {
+            case R.id.rl_finding_ride: {
                 showRideDialog();
+                break;
+            }
+            case R.id.back_arrow: {
+                Intent intent = new Intent(FindingRideActivity.this, ConformPickupActivity.class);
+                startActivity(intent);
                 break;
             }
         }
     }
 
     private void showRideDialog() {
-        dialog=new Dialog(context);
+        dialog = new Dialog(context);
         dialog.setContentView(R.layout.find_ride_dialog);
 
         Button dialogButton_contact = (Button) dialog.findViewById(R.id.contact_btn);
@@ -71,7 +91,7 @@ public class FindingRideActivity extends AppCompatActivity implements View.OnCli
 
     private void CancelRideBookingDialog() {
 
-        Dialog dialog=new Dialog(context);
+        Dialog dialog = new Dialog(context);
         dialog.setContentView(R.layout.booking_cancel_dialog);
         dialog.setCanceledOnTouchOutside(false);
         TextView mYes = (TextView) dialog.findViewById(R.id.yes_btn);
@@ -101,7 +121,7 @@ public class FindingRideActivity extends AppCompatActivity implements View.OnCli
     }
 
     private void ReasonForCancelletionDialog() {
-        dialog=new Dialog(context);
+        dialog = new Dialog(context);
         dialog.setContentView(R.layout.reason_for_cancellation);
         dialog.setCanceledOnTouchOutside(false);
         TextView mDone = (TextView) dialog.findViewById(R.id.done_1);

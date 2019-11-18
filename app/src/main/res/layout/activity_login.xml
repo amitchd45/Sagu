@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     tools:context="com.example.Activity.LoginActivity">
 
-        <include layout="@layout/header_logo"
-            android:id="@+id/topbar"/>
-
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/header_logo" />
 
 
     <androidx.core.widget.NestedScrollView
@@ -164,33 +164,42 @@
 
                         </LinearLayout>
 
-                        <LinearLayout
+                        <RelativeLayout
                             android:id="@+id/linearLayout2"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/linearLayout1"
-                            android:layout_centerHorizontal="true"
-                            android:layout_margin="8dp"
+                            android:padding="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_15"
+                            android:layout_marginLeft="@dimen/dp_15"
                             android:orientation="horizontal">
 
                             <View
+                                android:id="@+id/view1"
                                 android:layout_width="90dp"
                                 android:layout_height="1dp"
-                                android:layout_margin="9dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
                                 android:background="@color/gray" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_toLeftOf="@id/view2"
+                                android:layout_toRightOf="@id/view1"
+                                android:gravity="center"
+                                android:textSize="12sp"
                                 android:text="Or login with" />
 
                             <View
+                                android:id="@+id/view2"
                                 android:layout_width="90dp"
                                 android:layout_height="1dp"
-                                android:layout_margin="9dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentRight="true"
                                 android:background="@color/gray" />
 
-                        </LinearLayout>
+                        </RelativeLayout>
 
                         <LinearLayout
                             android:id="@+id/linearLayout3"

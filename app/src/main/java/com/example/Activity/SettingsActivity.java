@@ -31,8 +31,7 @@ public class SettingsActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(SettingsActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
         }
     }

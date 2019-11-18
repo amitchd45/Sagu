@@ -71,8 +71,7 @@ public class MyBookingsActivity extends AppCompatActivity implements View.OnClic
 
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(MyBookingsActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
         }
     }

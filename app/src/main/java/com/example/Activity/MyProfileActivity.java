@@ -48,8 +48,9 @@ public class MyProfileActivity extends AppCompatActivity implements View.OnClick
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(MyProfileActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
+//                Intent intent = new Intent(MyProfileActivity.this, GoogleMapActivity.class);
+//                startActivity(intent);
                 break;
 
             case R.id.pick_image1:

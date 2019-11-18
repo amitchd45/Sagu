@@ -32,8 +32,7 @@ public class HelpActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(HelpActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
         }
 

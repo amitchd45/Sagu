@@ -84,6 +84,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relative2"
         android:layout_below="@id/relativeLayout9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -115,6 +116,13 @@
 
 
     </RelativeLayout>
+
+    <View
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_below="@id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGray"/>
 
 
 

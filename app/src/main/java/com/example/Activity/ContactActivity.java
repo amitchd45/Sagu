@@ -32,8 +32,7 @@ public class ContactActivity extends AppCompatActivity implements View.OnClickLi
 
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(ContactActivity.this, GoogleMapActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
         }
     }

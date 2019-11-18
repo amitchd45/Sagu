@@ -16,7 +16,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.Activity.ConformPickup_1Activity"></activity>
+        <activity
+            android:name="com.example.Activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity android:name="com.example.Activity.ConformPickup_1Activity" />
         <activity android:name="com.example.Activity.SwitchRiderActivity" />
         <activity android:name="com.example.Activity.FindingRideActivity" />
         <activity android:name="com.example.Activity.AddPasswordActivity" />
@@ -55,7 +59,7 @@
             android:name="com.example.Activity.GoogleMapActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.example.Activity.LoginActivity"
+            android:name="com.example.Activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
