@@ -104,6 +104,7 @@
 
                                     <EditText
                                         android:id="@+id/username"
+                                        android:singleLine="true"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
@@ -144,6 +145,7 @@
                                         android:src="@drawable/telephone_of_old_design" />
 
                                     <EditText
+                                        android:singleLine="true"
                                         android:id="@+id/user_phone_no"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -185,6 +187,7 @@
                                         android:src="@drawable/forma_1_copy_2" />
 
                                     <EditText
+                                        android:singleLine="true"
                                         android:id="@+id/email_address"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -225,6 +228,7 @@
                                         android:src="@drawable/lock" />
 
                                     <EditText
+                                        android:singleLine="true"
                                         android:id="@+id/user_password"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
@@ -266,6 +270,7 @@
                                         android:src="@drawable/lock" />
 
                                     <EditText
+                                        android:singleLine="true"
                                         android:id="@+id/user_conform_password"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"

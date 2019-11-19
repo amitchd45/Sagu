@@ -31,8 +31,8 @@ public class AddPaymentActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addpayment);
 
-        mActivity_Title = (TextView) findViewById(R.id.header_text);
-        mActivity_Title.setText("Payment Options");
+        mActivity_Title = findViewById(R.id.header_text);
+        mActivity_Title.setText("Add Payment");
         btn_back = findViewById(R.id.back_arrow);
         btn_back.setOnClickListener(this);
 
@@ -59,8 +59,7 @@ public class AddPaymentActivity extends AppCompatActivity implements View.OnClic
 
         switch (view.getId()) {
             case R.id.back_arrow:
-                Intent intent = new Intent(AddPaymentActivity.this, PaymentActivity.class);
-                startActivity(intent);
+                onBackPressed();
                 break;
         }
 

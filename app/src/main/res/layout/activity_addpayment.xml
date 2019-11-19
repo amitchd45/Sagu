@@ -79,16 +79,26 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="3dp"
+                            android:textColor="@color/black"
                             android:text="Name" />
 
-                        <EditText
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textSize="@dimen/dp_15"
-                            android:singleLine="true"
-                            android:background="@drawable/boarder_of_edittext"
-                            android:hint="@string/omninos"
-                            android:padding="@dimen/dp_10" />
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="@dimen/editTextRedius">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:hint="@string/omninos"
+                                android:padding="@dimen/dp_10"
+                                android:singleLine="true"
+                                android:textSize="@dimen/dp_15" />
+
+                        </androidx.cardview.widget.CardView>
+
                     </LinearLayout>
 
 
@@ -104,16 +114,26 @@
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_marginBottom="3dp"
+                            android:textColor="@color/black"
                             android:text="Surname" />
 
-                        <EditText
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/boarder_of_edittext"
-                            android:hint="@string/omninos"
-                            android:textSize="@dimen/dp_15"
-                            android:singleLine="true"
-                            android:padding="@dimen/dp_10" />
+                            android:layout_margin="5dp"
+                            app:cardCornerRadius="@dimen/editTextRedius">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/white"
+                                android:hint="@string/omninos"
+                                android:padding="@dimen/dp_10"
+                                android:singleLine="true"
+                                android:textSize="@dimen/dp_15" />
+
+                        </androidx.cardview.widget.CardView>
+
                     </LinearLayout>
                 </LinearLayout>
 
@@ -132,16 +152,22 @@
                     android:text="@string/card_number"
                     android:textColor="@color/black" />
 
-                <EditText
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_10"
-                    android:layout_marginBottom="@dimen/dp_10"
-                    android:background="@drawable/boarder_of_edittext"
-                    android:hint="@string/card_digite"
-                    android:textSize="@dimen/dp_15"
-                    android:singleLine="true"
-                    android:padding="@dimen/dp_10" />
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="@dimen/editTextRedius">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="@string/card_digite"
+                        android:padding="@dimen/dp_10"
+                        android:singleLine="true"
+                        android:textSize="@dimen/dp_15" />
+
+                </androidx.cardview.widget.CardView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -152,8 +178,8 @@
                     <RelativeLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/dp_10"
                         android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5"
                         android:orientation="horizontal">
 
                         <EditText
@@ -164,9 +190,9 @@
                             android:layout_toLeftOf="@id/relative1"
                             android:drawableRight="@drawable/ic_question"
                             android:hint="@string/expiry_date"
+                            android:padding="@dimen/dp_10"
                             android:singleLine="true"
-                            android:textSize="@dimen/dp_15"
-                            android:padding="@dimen/dp_10" />
+                            android:textSize="@dimen/dp_15" />
 
                         <RelativeLayout
                             android:id="@+id/relative1"
@@ -192,7 +218,7 @@
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/dp_10"
+                        android:layout_margin="@dimen/dp_5"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -208,9 +234,9 @@
                                 android:layout_toLeftOf="@id/relative"
                                 android:drawableRight="@drawable/ic_question"
                                 android:hint="@string/cvv_no"
+                                android:padding="@dimen/dp_10"
                                 android:singleLine="true"
-                                android:textSize="@dimen/dp_15"
-                                android:padding="@dimen/dp_10" />
+                                android:textSize="@dimen/dp_15" />
 
                             <RelativeLayout
                                 android:id="@+id/relative"
@@ -272,16 +298,17 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp_5">
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="@dimen/editTextRedius">
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/boarder_of_edittext"
+                        android:background="@color/white"
                         android:hint="@string/australia"
-                        android:textSize="@dimen/dp_15"
+                        android:padding="@dimen/dp_10"
                         android:singleLine="true"
-                        android:padding="@dimen/dp_10" />
+                        android:textSize="@dimen/dp_15" />
 
                 </androidx.cardview.widget.CardView>
 

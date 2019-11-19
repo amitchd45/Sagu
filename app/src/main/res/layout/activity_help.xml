@@ -9,41 +9,41 @@
 
     <include
         android:id="@+id/header2"
-        layout="@layout/header_layout"/>
+        layout="@layout/header_layout" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_below="@id/header2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/header2">
 
         <RelativeLayout
-            android:layout_below="@id/header2"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_below="@id/header2">
 
             <RelativeLayout
-                android:layout_marginTop="20dp"
                 android:id="@+id/relativeLayout1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <include layout="@layout/header_logo" />
 
             </RelativeLayout>
 
             <LinearLayout
-                android:layout_below="@id/relativeLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout1"
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginRight="40dp"
                     android:layout_marginBottom="30dp"
-                    android:layout_marginTop="30dp"
                     android:background="@color/white"
                     app:cardCornerRadius="@dimen/cardCornerRadiusOfEditText">
 
@@ -61,7 +61,8 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:hint="Your Name"
-                            android:padding="@dimen/layout_padding" />
+                            android:padding="@dimen/layout_padding"
+                            android:singleLine="true" />
 
                     </LinearLayout>
 
@@ -90,7 +91,8 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:hint="Mobile Number"
-                            android:padding="@dimen/layout_padding" />
+                            android:padding="@dimen/layout_padding"
+                            android:singleLine="true" />
 
                     </LinearLayout>
 
@@ -119,7 +121,8 @@
                             android:layout_weight="1"
                             android:background="@color/white"
                             android:hint="Email"
-                            android:padding="@dimen/layout_padding" />
+                            android:padding="@dimen/layout_padding"
+                            android:singleLine="true" />
 
                     </LinearLayout>
 
@@ -145,14 +148,14 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="@color/white"
+                            android:gravity="top|left"
                             android:hint="Your Message..."
-                            android:padding="@dimen/layout_padding"
                             android:inputType="textMultiLine"
                             android:lines="8"
-                            android:minLines="6"
-                            android:gravity="top|left"
                             android:maxLines="10"
-                            android:scrollbars="vertical"/>
+                            android:minLines="6"
+                            android:padding="@dimen/layout_padding"
+                            android:scrollbars="vertical" />
 
                     </LinearLayout>
 
@@ -161,11 +164,11 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:background="@drawable/button_background"
                     android:text="Send Query"
                     android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:layout_margin="40dp"
-                    android:background="@drawable/button_background"/>
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 

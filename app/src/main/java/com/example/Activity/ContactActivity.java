@@ -20,7 +20,7 @@ public class ContactActivity extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
-        mActivity_Title = (TextView) findViewById(R.id.header_text);
+        mActivity_Title = findViewById(R.id.header_text);
         mActivity_Title.setText("Contact Us");
 
         btn_back = findViewById(R.id.back_arrow);

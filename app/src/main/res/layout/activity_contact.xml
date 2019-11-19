@@ -8,106 +8,107 @@
 
     <include
         android:id="@+id/header2"
-        layout="@layout/header_layout"/>
+        layout="@layout/header_layout" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_below="@id/header2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/header2">
 
-    <RelativeLayout
-        android:layout_below="@id/header2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:layout_marginTop="20dp"
-        android:id="@+id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <include layout="@layout/header_logo" />
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:layout_below="@id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <androidx.cardview.widget.CardView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="40dp"
-            android:background="@color/white"
-            app:cardCornerRadius="@dimen/editTextRedius">
+            android:layout_height="match_parent"
+            android:layout_below="@id/header2">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <include layout="@layout/header_logo" />
+
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="@dimen/layout_padding">
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayout1"
+                android:orientation="vertical">
 
-                <EditText
-                    android:id="@+id/email_address"
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_margin="40dp"
                     android:background="@color/white"
-                    android:hint="Reason For Contact"
-                    android:padding="@dimen/layout_padding" />
+                    app:cardCornerRadius="@dimen/editTextRedius">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/layout_padding">
+
+                        <EditText
+                            android:id="@+id/email_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:hint="Reason For Contact"
+                            android:padding="@dimen/layout_padding"
+                            android:singleLine="true" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    app:cardCornerRadius="@dimen/cardCornerRadiusOfEditText">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/layout_padding">
+
+                        <EditText
+                            android:id="@+id/edit_query"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="top|left"
+                            android:hint="Type Your Query"
+                            android:inputType="textMultiLine"
+                            android:lines="8"
+                            android:maxLines="10"
+                            android:minLines="6"
+                            android:padding="@dimen/layout_padding"
+                            android:scrollbars="vertical" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="40dp"
+                    android:background="@drawable/button_background"
+                    android:text="Send Query"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
-            app:cardCornerRadius="@dimen/cardCornerRadiusOfEditText">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:padding="@dimen/layout_padding">
-
-                <EditText
-                    android:id="@+id/edit_query"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/white"
-                    android:hint="Type Your Query"
-                    android:padding="@dimen/layout_padding"
-                    android:inputType="textMultiLine"
-                    android:lines="8"
-                    android:minLines="6"
-                    android:gravity="top|left"
-                    android:maxLines="10"
-                    android:scrollbars="vertical"/>
-
-            </LinearLayout>
-
-        </androidx.cardview.widget.CardView>
-
-       <Button
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:text="Send Query"
-           android:textAllCaps="false"
-           android:textColor="@color/white"
-           android:layout_margin="40dp"
-           android:background="@drawable/button_background"/>
-
-    </LinearLayout>
-
-    </RelativeLayout>
+        </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
 
