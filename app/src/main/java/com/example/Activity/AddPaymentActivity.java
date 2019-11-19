@@ -48,10 +48,8 @@ public class AddPaymentActivity extends AppCompatActivity implements View.OnClic
 
     private ArrayList<CustomItem> getCustomList() {
         customList = new ArrayList<>();
-        customList.add(new CustomItem("Credit Card",R.drawable.ic_credit_card));
-        customList.add(new CustomItem("Debit Card",R.drawable.ic_card_giftcard));
-        customList.add(new CustomItem("Credit Card",R.drawable.ic_credit_card));
-        customList.add(new CustomItem("Debit Card",R.drawable.ic_card_giftcard));
+        customList.add(new CustomItem("Credit Card",R.drawable.card));
+        customList.add(new CustomItem("Debit Card",R.drawable.card));
 
         return customList;
     }

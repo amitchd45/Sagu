@@ -97,17 +97,6 @@ public class GoogleMapActivity extends AppCompatActivity implements OnMapReadyCa
         drawerLayout = findViewById(R.id.drawer_layout1);
 
 
-
-//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-//        drawerLayout.addDrawerListener(toggle);
-//        toggle.syncState();
-
-        //------------change navigation drawer icon button--------------
-
-//        getSupportActionBar().setHomeButtonEnabled(true);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setHomeAsUpIndicator(R.drawable.vector_smart_object_1);
-
         navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 

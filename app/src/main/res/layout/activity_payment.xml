@@ -39,9 +39,9 @@
 
                     <ImageView
                         android:id="@+id/btn_locate"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_credit_card" />
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/card" />
 
                     <TextView
                         android:id="@+id/et_address"
