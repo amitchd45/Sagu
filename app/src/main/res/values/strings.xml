@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ConnekMa</string>
+    <string name="app_name">SitAndGo_user</string>
 
     <string name="login_header_name">login</string>
 
@@ -89,6 +89,7 @@
     <string name="location_to">Street No.27 Melbourne</string>
     <string name="spicify_pickup">Specify Pick up location</string>
     <string name="move_to_pin_adjust">Move pin to adjust pickup</string>
+    <string name="resend_otp"><u>Resend otp</u></string>
 
 
 </resources>

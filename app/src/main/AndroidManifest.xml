@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.connekma">
+    package="com.omninous.connekma">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -17,49 +17,48 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.example.Activity.LoginActivity"
+            android:name="com.omninous.Activity.LoginActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan"></activity>
-        <activity android:name="com.example.Activity.ConformPickup_1Activity" />
-        <activity android:name="com.example.Activity.SwitchRiderActivity" />
-        <activity android:name="com.example.Activity.FindingRideActivity" />
-        <activity android:name="com.example.Activity.AddPasswordActivity" />
-        <activity android:name="com.example.Activity.AddPayment_1Activity" />
-        <activity android:name="com.example.Activity.Payment_1Activity" />
-        <activity android:name="com.example.Activity.PaymentActivity" />
-        <activity android:name="com.example.Activity.MyBookingsActivity" />
-        <activity android:name="com.example.Activity.SettingsActivity" />
+        <activity android:name="com.omninous.Activity.ConformPickup_1Activity" />
+        <activity android:name="com.omninous.Activity.SwitchRiderActivity" />
+        <activity android:name="com.omninous.Activity.FindingRideActivity" />
+        <activity android:name="com.omninous.Activity.AddPasswordActivity" />
+        <activity android:name="com.omninous.Activity.AddPayment_1Activity" />
+        <activity android:name="com.omninous.Activity.Payment_1Activity" />
+        <activity android:name="com.omninous.Activity.PaymentActivity" />
+        <activity android:name="com.omninous.Activity.MyBookingsActivity" />
+        <activity android:name="com.omninous.Activity.SettingsActivity" />
         <activity
-            android:name="com.example.Activity.HelpActivity"
+            android:name="com.omninous.Activity.HelpActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.example.Activity.ContactActivity"
+            android:name="com.omninous.Activity.ContactActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name="com.example.Activity.InviteFriendsActivity" />
+        <activity android:name="com.omninous.Activity.InviteFriendsActivity" />
         <activity
-            android:name="com.example.Activity.AddPaymentActivity"
-            android:parentActivityName="com.example.Activity.GoogleMapActivity" />
+            android:name="com.omninous.Activity.AddPaymentActivity"
+            android:parentActivityName="com.omninous.Activity.GoogleMapActivity" />
         <activity
-            android:name="com.example.Activity.TripsActivity"
-            android:parentActivityName="com.example.Activity.GoogleMapActivity" />
+            android:name="com.omninous.Activity.TripsActivity"
+            android:parentActivityName="com.omninous.Activity.GoogleMapActivity" />
         <activity
-            android:name="com.example.Activity.MyProfileActivity"
-            android:parentActivityName="com.example.Activity.GoogleMapActivity" />
-        <activity android:name="com.example.Activity.MainActivity" />
+            android:name="com.omninous.Activity.MyProfileActivity"
+            android:parentActivityName="com.omninous.Activity.GoogleMapActivity" />
         <activity
-            android:name="com.example.Activity.ConformPickupActivity"
+            android:name="com.omninous.Activity.ConformPickupActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name="com.example.Activity.CongratulationsActivity" />
-        <activity android:name="com.example.Activity.VerificationActivity" />
+        <activity android:name="com.omninous.Activity.CongratulationsActivity" />
+        <activity android:name="com.omninous.Activity.VerificationActivity" />
         <activity
-            android:name="com.example.Activity.RegisterActivity"
+            android:name="com.omninous.Activity.RegisterActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.example.Activity.GoogleMapActivity"
+            android:name="com.omninous.Activity.GoogleMapActivity"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name="com.example.Activity.SplashActivity"
+            android:name="com.omninous.Activity.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>

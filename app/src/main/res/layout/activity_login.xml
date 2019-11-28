@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Activity.LoginActivity">
+    android:background="@android:color/black"
+    tools:context="com.omninous.Activity.LoginActivity">
 
     <include
         android:id="@+id/topbar"
@@ -34,9 +35,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginLeft="@dimen/card_view_margin_left"
                     android:layout_marginRight="@dimen/card_view_margin_right"
-                    android:elevation="10dp"
                     app:cardCornerRadius="@dimen/cardCornerRadius"
-                    app:cardElevation="@dimen/cardElevation"
                     app:cardPreventCornerOverlap="false"
                     app:cardUseCompatPadding="true">
 
@@ -84,8 +83,7 @@
                                         android:id="@+id/email_icon"
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
-                                        android:paddingTop="@dimen/icon_padding_top"
-                                        android:src="@drawable/forma_1" />
+                                        android:src="@drawable/message" />
 
                                     <EditText
                                         android:id="@+id/email_address"
@@ -126,8 +124,8 @@
                                         android:id="@+id/lock_icon"
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
-                                        android:paddingTop="@dimen/icon_padding_top"
-                                        android:src="@drawable/lock" />
+                                        android:src="@drawable/lock"
+                                        android:layout_marginBottom="3dp"/>
 
                                     <EditText
                                         android:id="@+id/user_Password"
@@ -247,6 +245,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
                     android:text="Don't have an account? " />
 
                 <TextView
@@ -254,7 +253,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/register"
-                    android:textColor="@color/lightblue" />
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 

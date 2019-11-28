@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Activity.CongratulationsActivity">
+    android:background="@android:color/black"
+    tools:context="com.omninous.Activity.CongratulationsActivity">
 
     <ImageView
         android:id="@+id/iv_cong_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:tint="@android:color/white"
         android:src="@drawable/ic_arrow_back">
 
     </ImageView>
@@ -52,7 +54,6 @@
                     android:elevation="10dp"
                     app:cardBackgroundColor="@color/card_bg_color"
                     app:cardCornerRadius="@dimen/cardCornerRadius"
-                    app:cardElevation="@dimen/cardElevation"
                     app:cardPreventCornerOverlap="false"
                     app:cardUseCompatPadding="true">
 
@@ -93,7 +94,7 @@
                                     android:gravity="center_horizontal"
                                     android:text="@string/congratulations"
                                     android:textSize="20sp"
-                                    android:textColor="@color/lightblue"
+                                    android:textColor="#00A066"
                                     android:textStyle="bold" />
 
                             </RelativeLayout>

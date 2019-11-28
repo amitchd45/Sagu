@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Activity.SwitchRiderActivity">
+    tools:context="com.omninous.Activity.SwitchRiderActivity">
 
     <include
         android:id="@+id/header_switch_rider"
@@ -96,7 +96,7 @@
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/custom_background"
+            android:background="@drawable/button_background"
             android:layout_margin="30dp"
             android:src="@drawable/ic_location_searching_black_24dp"/>
 

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Activity.Payment_1Activity">
+    tools:context="com.omninous.Activity.Payment_1Activity">
 
     <include
         android:id="@+id/add_payment_header"
@@ -42,7 +42,7 @@
                         android:layout_height="wrap_content"
                         android:text="How would you like pay ?"
                         android:textSize="20sp"
-                        android:textColor="@color/black"
+                        android:textColor="@android:color/black"
                         android:textStyle="bold"
                         android:layout_gravity="center_horizontal"/>
 

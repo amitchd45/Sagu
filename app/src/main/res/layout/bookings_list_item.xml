@@ -85,32 +85,41 @@
 
     <RelativeLayout
         android:id="@+id/relative2"
-        android:layout_below="@id/relativeLayout9"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout9">
 
         <LinearLayout
-            android:layout_marginTop="30dp"
-            android:layout_centerInParent="true"
-            android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="150dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="@dimen/dp_5"
+                android:id="@+id/btn_start_trip"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight=".5"
                 android:background="@drawable/button_background"
+                android:text="Start Trip"
                 android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:text="Start Trip"/>
+                android:textColor="@color/white" />
 
             <Button
-                android:layout_marginLeft="15dp"
-                android:layout_width="150dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:id="@+id/btn_trip_cancel"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight=".5"
                 android:background="@drawable/white_bg"
-                android:text="Cancel Booking"/>
+                android:text="Cancel Booking"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black" />
 
         </LinearLayout>
 
@@ -118,11 +127,11 @@
     </RelativeLayout>
 
     <View
-        android:layout_marginTop="@dimen/dp_5"
-        android:layout_below="@id/relative2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/lightGray"/>
+        android:layout_below="@id/relative2"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/lightGray" />
 
 
 

@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Activity.VerificationActivity">
+    android:background="@android:color/black"
+    tools:context="com.omninous.Activity.VerificationActivity">
 
     <ImageView
         android:id="@+id/iv_verify_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:tint="@android:color/white"
         android:src="@drawable/ic_arrow_back">
 
     </ImageView>
@@ -26,182 +28,187 @@
     </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
-        android:layout_below="@id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/relativeLayout1">
 
         <RelativeLayout
-            android:id="@+id/relativeLayout2"
+            android:id="@+id/relativeLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_below="@id/relativeLayout1">
 
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview1"
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="@dimen/card_view_margin_left"
-                android:layout_marginRight="@dimen/card_view_margin_right"
-                android:elevation="10dp"
-                app:cardBackgroundColor="@color/card_bg_color"
-                app:cardCornerRadius="@dimen/cardCornerRadius"
-                app:cardElevation="@dimen/cardElevation"
-                app:cardPreventCornerOverlap="false"
-                app:cardUseCompatPadding="true">
+                android:layout_height="wrap_content">
 
-                <RelativeLayout
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview1"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="@dimen/card_view_margin_left"
+                    android:layout_marginRight="@dimen/card_view_margin_right"
+                    android:elevation="10dp"
+                    app:cardBackgroundColor="@color/card_bg_color"
+                    app:cardCornerRadius="@dimen/cardCornerRadius"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
 
-                    <LinearLayout
-                        android:id="@+id/linearLayout1"
+                    <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="@dimen/padding_inside_card_view">
+                        android:layout_height="wrap_content">
 
-                        <TextView
+                        <LinearLayout
+                            android:id="@+id/linearLayout1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:padding="8dp"
-                            android:text="@string/verification_header_name"
-                            android:textColor="@color/black"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp">
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_inside_card_view">
 
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:text="A verification code has been sent to the phone\n number +915465644320.Please\n enter the code below."
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="@string/verification_header_name"
                                 android:textColor="@color/black"
+                                android:textSize="15sp"
                                 android:textStyle="bold" />
 
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="30dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_centerHorizontal="true"
-                                android:gravity="center_horizontal"
-                                android:textColor="@color/lightDark"
-                                android:text="Enter Your Verification Code" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <LinearLayout
+                            <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_centerHorizontal="true"
-                                android:layout_marginTop="30dp"
-                                android:gravity="center_horizontal">
+                                android:layout_marginTop="30dp">
 
-                                <EditText
-                                    android:id="@+id/otp1"
-                                    android:layout_width="wrap_content"
+                                <TextView
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:background="@drawable/circle_shape"
-                                    android:gravity="center"
-                                    android:inputType="number"
-                                    android:textStyle="bold"
-                                    android:maxLength="1"
-                                    android:layout_margin="6dp"
-                                    android:textColor="@color/white" />
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center_horizontal"
+                                    android:text="A verification code has been sent to the phone\nnumber +915465644320.Please\n enter the code below."
+                                    android:textColor="@color/black" />
 
-                                <EditText
-                                    android:id="@+id/otp2"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:background="@drawable/circle_shape"
-                                    android:gravity="center"
-                                    android:inputType="number"
-                                    android:maxLength="1"
-                                    android:textStyle="bold"
-                                    android:layout_margin="6dp"
-                                    android:textColor="@color/white" />
+                            </RelativeLayout>
 
-                                <EditText
-                                    android:id="@+id/otp3"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:background="@drawable/circle_shape"
-                                    android:gravity="center"
-                                    android:inputType="number"
-                                    android:layout_margin="6dp"
-                                    android:maxLength="1"
-                                    android:textStyle="bold"
-                                    android:textColor="@color/white" />
-
-                                <EditText
-                                    android:id="@+id/otp4"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:background="@drawable/circle_shape"
-                                    android:gravity="center"
-                                    android:inputType="number"
-                                    android:layout_margin="6dp"
-                                    android:maxLength="1"
-                                    android:textStyle="bold"
-                                    android:textColor="@color/white" />
-
-                            </LinearLayout>
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_marginTop="50dp"
-                            android:layout_marginBottom="30dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                            <Button
-                                android:id="@+id/varification_submit_btn"
+                            <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/button_background"
-                                android:text="@string/submit_button"
-                                android:textAllCaps="false"
-                                android:textColor="@color/white"
-                                android:textStyle="bold" />
+                                android:layout_marginTop="30dp">
 
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center_horizontal"
+                                    android:text="Enter Your Verification Code"
+                                    android:textColor="@color/lightDark" />
 
-                        </RelativeLayout>
+                            </RelativeLayout>
 
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp">
 
+                                <LinearLayout
+                                    android:id="@+id/linearLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:gravity="center_horizontal"
+                                    android:orientation="horizontal">
 
+                                    <EditText
+                                        android:id="@+id/otp1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:background="@drawable/circle_shape"
+                                        android:gravity="center"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
-                    </LinearLayout>
+                                    <EditText
+                                        android:id="@+id/otp2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:background="@drawable/circle_shape"
+                                        android:gravity="center"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
-                </RelativeLayout>
+                                    <EditText
+                                        android:id="@+id/otp3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:background="@drawable/circle_shape"
+                                        android:gravity="center"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
 
-            </androidx.cardview.widget.CardView>
+                                    <EditText
+                                        android:id="@+id/otp4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="6dp"
+                                        android:background="@drawable/circle_shape"
+                                        android:gravity="center"
+                                        android:inputType="number"
+                                        android:maxLength="1"
+                                        android:textColor="@color/white"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/linearLayout"
+                                    android:layout_centerInParent="true"
+                                    android:layout_marginTop="@dimen/dp_10"
+                                    android:text="@string/resend_otp"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp_30"
+                                android:layout_marginBottom="@dimen/dp_20">
+
+                                <Button
+                                    android:id="@+id/varification_submit_btn"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/button_background"
+                                    android:text="@string/submit_button"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
 
         </RelativeLayout>
-
-    </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
 </RelativeLayout>

@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.Activity.RegisterActivity">
+    android:background="@android:color/black"
+    tools:context="com.omninous.Activity.RegisterActivity">
 
     <ImageView
         android:id="@+id/iv_back_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:tint="@android:color/white"
         android:src="@drawable/ic_arrow_back">
 
     </ImageView>
@@ -21,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <include layout="@layout/header_logo" />
+        <include layout="@layout/header_logo"/>
 
     </RelativeLayout>
 
@@ -51,7 +53,6 @@
                     android:elevation="10dp"
                     app:cardBackgroundColor="@color/card_bg_color"
                     app:cardCornerRadius="@dimen/cardCornerRadius"
-                    app:cardElevation="@dimen/cardElevation"
                     app:cardPreventCornerOverlap="false"
                     app:cardUseCompatPadding="true">
 
@@ -99,8 +100,7 @@
                                         android:id="@+id/email_icon"
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
-                                        android:paddingTop="@dimen/icon_padding_top"
-                                        android:src="@drawable/user_silhouette__2_" />
+                                        android:src="@drawable/ic_user_silhouette" />
 
                                     <EditText
                                         android:id="@+id/username"
@@ -141,8 +141,7 @@
                                         android:id="@+id/telephone_icon"
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
-                                        android:paddingTop="@dimen/icon_padding_top"
-                                        android:src="@drawable/telephone_of_old_design" />
+                                        android:src="@drawable/ic_telephone_of_old_design" />
 
                                     <EditText
                                         android:singleLine="true"
@@ -183,8 +182,7 @@
                                         android:id="@+id/message_icon"
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
-                                        android:paddingTop="@dimen/icon_padding_top"
-                                        android:src="@drawable/forma_1_copy_2" />
+                                        android:src="@drawable/message" />
 
                                     <EditText
                                         android:singleLine="true"
@@ -224,7 +222,7 @@
                                         android:id="@+id/password_icon"
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
-                                        android:paddingTop="@dimen/icon_padding_top"
+                                        android:layout_marginBottom="3dp"
                                         android:src="@drawable/lock" />
 
                                     <EditText
@@ -266,7 +264,7 @@
                                         android:id="@+id/password_icon1"
                                         android:layout_width="30dp"
                                         android:layout_height="30dp"
-                                        android:paddingTop="@dimen/icon_padding_top"
+                                        android:layout_marginBottom="3dp"
                                         android:src="@drawable/lock" />
 
                                     <EditText
@@ -313,13 +311,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
                     android:text="@string/signup_login_hint" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/login"
-                    android:textColor="@color/lightblue" />
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
